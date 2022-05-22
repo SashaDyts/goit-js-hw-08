@@ -9,7 +9,7 @@ formEl.addEventListener('submit', onFormElSubmit);
 
 const data = {};
 
-if (localStorage.length > 0) {
+if (localStorage.getItem('feedback-form-state')) {
   const localStorageData = JSON.parse(localStorage.getItem('feedback-form-state'));
   const { email = '', message = '' } = localStorageData;
 
