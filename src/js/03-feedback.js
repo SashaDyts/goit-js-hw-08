@@ -30,7 +30,7 @@ function onFormElSubmit(evt) {
   evt.preventDefault();
 
   evt.target.reset();
-  localStorage.clear();
+  localStorage.removeItem('feedback-form-state');
 
   console.log(data);
 }
